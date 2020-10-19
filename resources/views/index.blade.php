@@ -121,7 +121,25 @@
       "descrizione": "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
     }
     ]';
+
+    $data = json_decode($data, true);
+    
+    
+    $lunga = [];
+    $corta = [];
+    $cortissima = [];
+
+    foreach ($data as $item) {
+      if ($item["tipo"] == "lunga") {
+        $lunga[] = $item;
+      } elseif ($item["tipo"] == "corta") {
+        $corta[] = $item;
+      } elseif ($item["tipo"] == "cortissima") {
+        $cortissima[] = $item;
+      }
+    }
 @endphp
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -129,9 +147,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{asset("css/app.css")}}">
   <title>Document</title>
 </head>
 <body>
-  
+  <section>
+    @if (count($lunga) > 0)    
+      <h2>Lunga</h2>
+      @foreach ($lunga as $item)
+      <div class="box-pasta">
+        <img src="{{$item["src"]}}" alt="">
+        <h4>{{$item["titolo"]}}</h4>    
+      </div>
+      @endforeach
+    @endif
+
+    @if (count($corta) > 0)        
+      <h2>Corta</h2>
+      @foreach ($corta as $item)
+      <div class="box-pasta">
+        <img src="{{$item["src"]}}" alt="">
+        <h4>{{$item["titolo"]}}</h4>    
+      </div>
+      @endforeach
+    @endif
+
+    @if (count($cortissima) > 0)    
+      <h2>Cortissima</h2>
+      @foreach ($cortissima as $item)
+      <div class="box-pasta">
+        <img src="{{$item["src"]}}" alt="">
+        <h4>{{$item["titolo"]}}</h4>    
+      </div>
+      @endforeach
+    @endif
+  </section>
 </body>
 </html>
