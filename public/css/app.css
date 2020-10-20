@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;
+
+300;400;700;900&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .box-flex-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .box-flex-header .logo {
+  margin: 25px;
+}
+
+header .box-flex-header .nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header .box-flex-header .nav-header li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+header .box-flex-header .nav-header li a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header .box-flex-header .nav-header li:hover {
+  background-color: #B3E5FC;
+}
+
