@@ -1,0 +1,25 @@
+section {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    
+        h2 {
+            color: $titoloPastaColor;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        .prova-flex {
+            display: flex;
+            flex-wrap: wrap;
+
+            .box-pasta {
+                width: calc((100% - 60px) / 3);
+                margin: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
