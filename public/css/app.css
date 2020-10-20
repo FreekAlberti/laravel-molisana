@@ -7,6 +7,11 @@
   font-family: "Lato", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -46,28 +51,23 @@ header .box-flex-header .nav-header li:hover {
   background-color: #B3E5FC;
 }
 
-section .container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-section .container h2 {
+section h2 {
   color: #002D73;
   font-size: 35px;
   text-transform: uppercase;
 }
 
-section .container .prova-flex {
+section .prova-flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-section .container .prova-flex .box-pasta {
+section .prova-flex .box-pasta {
   width: calc((100% - 60px) / 3);
   margin: 10px;
 }
 
-section .container .prova-flex .box-pasta img {
+section .prova-flex .box-pasta img {
   width: 100%;
 }
 

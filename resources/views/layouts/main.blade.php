@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="{{asset("css/app.css")}}">
   <title>@yield('titolo-pagina')</title>
 </head>
-<body>
-    @include('partials/header');
+  <body>
+    @include('partials/header')
     @yield('main-content')
-</body>
+    @include('partials/footer')
+  </body>
 </html>
