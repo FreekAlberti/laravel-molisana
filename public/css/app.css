@@ -51,6 +51,10 @@ header .box-flex-header .nav-header li:hover {
   background-color: #B3E5FC;
 }
 
+section {
+  background-image: url("/img/fondo-pag-speciali.jpg");
+}
+
 section h2 {
   color: #002D73;
   font-size: 35px;
