@@ -24,8 +24,13 @@ Route::get('/', function () {
 })->name("Home");
 
 Route::get('/prodotti', function () {
-    return view('prodotti');
+    return redirect()->route('Home');
 })->name("Prodotti");
+
+Route::get('/product/show/{id}', function ($id) {
+    $prodotto = config("pasta.$id");
+    return view('product', ["product" => $prodotto]);
+})->name("Show");
 
 Route::get('/news', function () {
     return view('news');
