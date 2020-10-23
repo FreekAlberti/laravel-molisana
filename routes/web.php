@@ -28,9 +28,12 @@ Route::get('/prodotti', function () {
 })->name("Prodotti");
 
 Route::get('/product/show/{id}', function ($id) {
+    if (config("pasta.$id") == null) {
+        abort(404);
+    }
     $prodotto = config("pasta.$id");
     return view('product', ["product" => $prodotto]);
-})->name("Show");
+})->where("id", "[0-9]+")->name("Show");
 
 Route::get('/news', function () {
     return view('news');
