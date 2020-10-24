@@ -13,7 +13,7 @@
         @foreach ($paste["lunga"] as $item)
         <div class="box-pasta">
           <img src="{{$item["src"]}}" alt="">
-          <a href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
         </div>
         @endforeach
       </div>
@@ -25,7 +25,7 @@
         @foreach ($paste["corta"] as $item)
         <div class="box-pasta">
           <img src="{{$item["src"]}}" alt="">
-          <a href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
         </div>
         @endforeach
       </div>
@@ -37,7 +37,7 @@
         @foreach ($paste["cortissima"] as $item)
         <div class="box-pasta">
           <img src="{{$item["src"]}}" alt="">
-          <a href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
         </div>
         @endforeach
       </div>
