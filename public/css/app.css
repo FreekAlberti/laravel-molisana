@@ -74,14 +74,27 @@ section .prova-flex .box-pasta {
   background-color: #496680;
 }
 
-section .prova-flex .box-pasta img {
+section .prova-flex .box-pasta .icona-link {
+  position: absolute;
+  display: none;
+  width: 40px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section .prova-flex .box-pasta:hover .icona-link {
+  display: block;
+}
+
+section .prova-flex .box-pasta .sfondo-pasta {
   width: 100%;
   height: 100%;
 }
 
 section .prova-flex .box-pasta .nome-pasta {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
@@ -90,14 +103,17 @@ section .prova-flex .box-pasta .nome-pasta {
   text-decoration: none;
   text-align: center;
   display: none;
-  font-weight: 100;
+}
+
+section .prova-flex .box-pasta .nome-pasta h4 {
+  font-weight: 300;
 }
 
 section .prova-flex .box-pasta:hover .nome-pasta {
   display: block;
 }
 
-section .prova-flex .box-pasta:hover img {
+section .prova-flex .box-pasta:hover .sfondo-pasta {
   opacity: 0.3;
   transform: scale(1.5);
 }

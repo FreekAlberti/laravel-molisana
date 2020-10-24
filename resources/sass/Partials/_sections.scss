@@ -17,14 +17,27 @@ section {
             overflow: hidden;
             background-color: #496680;
 
-            img {
+            .icona-link {
+                position: absolute;
+                display: none;
+                width: 40px;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover .icona-link {
+                display: block;
+            }
+
+            .sfondo-pasta {
                 width: 100%;
                 height: 100%;
             }
 
             & .nome-pasta {
                 position: absolute;
-                top: 50%;
+                top: 30%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-transform: uppercase;
@@ -33,14 +46,17 @@ section {
                 text-decoration: none;
                 text-align: center;
                 display: none;
-                font-weight: 100;
+
+                & h4 {
+                    font-weight: 300;
+                }
             }
 
             &:hover .nome-pasta {
                 display: block;
             }
 
-            &:hover img {
+            &:hover .sfondo-pasta {
                 opacity: 0.3;
                 transform: scale(1.5);
             }

@@ -12,8 +12,9 @@
       <div class="prova-flex">
         @foreach ($paste["lunga"] as $item)
         <div class="box-pasta">
-          <img src="{{$item["src"]}}" alt="">
-          <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <img class="sfondo-pasta" src="{{$item["src"]}}" alt="">
+          <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>
+          <a href="/product/show/{{$item["id"]}}"><img class="icona-link" src="{{asset("img/icon.svg")}}" alt=""></a>
         </div>
         @endforeach
       </div>
@@ -24,8 +25,9 @@
       <div class="prova-flex">
         @foreach ($paste["corta"] as $item)
         <div class="box-pasta">
-          <img src="{{$item["src"]}}" alt="">
+          <img class="sfondo-pasta" src="{{$item["src"]}}" alt="">
           <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <a href="/product/show/{{$item["id"]}}"><img class="icona-link" src="{{asset("img/icon.svg")}}" alt=""></a>
         </div>
         @endforeach
       </div>
@@ -36,8 +38,9 @@
       <div class="prova-flex">
         @foreach ($paste["cortissima"] as $item)
         <div class="box-pasta">
-          <img src="{{$item["src"]}}" alt="">
+          <img class="sfondo-pasta" src="{{$item["src"]}}" alt="">
           <a class="nome-pasta" href="/product/show/{{$item["id"]}}"><h4>{{$item["titolo"]}}</h4></a>    
+          <a href="/product/show/{{$item["id"]}}"><img class="icona-link" src="{{asset("img/icon.svg")}}" alt=""></a>
         </div>
         @endforeach
       </div>
