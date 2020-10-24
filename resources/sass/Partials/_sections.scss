@@ -2,10 +2,9 @@ section {
     background-image: url("/img/fondo-pag-speciali.jpg");
     
     h2 {
-        color: $titoloPastaColor;
-        font-size: 35px;
-        text-transform: uppercase;
+        @include titolo
     }
+    
     .prova-flex {
         display: flex;
         flex-wrap: wrap;

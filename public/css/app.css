@@ -118,6 +118,32 @@ section .prova-flex .box-pasta:hover .sfondo-pasta {
   transform: scale(1.5);
 }
 
+.product {
+  background-color: #B8DAE4;
+}
+
+.product .box-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.product .box-flex h1 {
+  margin-top: 30px;
+  color: #002D73;
+  text-transform: capitalize;
+  font-size: 45px;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product .descrizione-prodotto {
+  color: #002D73;
+  font-size: 25px;
+  padding-bottom: 60px;
+}
+
 .wrapper {
   margin-top: 90px;
   color: #848D9B;

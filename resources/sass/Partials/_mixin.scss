@@ -9,3 +9,9 @@
   transform: translate(-50%, -50%);
   display: none;
 }
+
+@mixin titolo {
+  color: $titoloPastaColor;
+  font-size: 35px;
+  text-transform: uppercase;
+}
