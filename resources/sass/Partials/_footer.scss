@@ -1,0 +1,25 @@
+.wrapper {
+    margin-top: 90px;
+    color: #848D9B;
+    display: flex;
+    align-items: flex-start;
+    line-height: 25px;
+    
+    & h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .padding-footer {
+        padding: 0 10px;
+    }
+
+    .footer-middle h4:not(:first-child) {
+        margin-top: 20px;
+    }
+
+}    
+
+.img-footer {
+    width: 100%;
+}
